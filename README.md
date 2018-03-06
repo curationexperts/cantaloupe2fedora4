@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/curationexperts/cantaloupe2fedora4.svg?branch=master)](https://travis-ci.org/curationexperts/cantaloupe2fedora4)
+
 # cantaloupe2fedora4
 A resolver to let cantaloupe get images from fedora 4
 
