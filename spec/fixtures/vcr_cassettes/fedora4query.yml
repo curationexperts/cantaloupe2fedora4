@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://127.0.0.1:8984/rest/dev/9g/54/xh/65/9g54xh65x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Prefer:
+      - return=representation
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Mar 2018 13:13:26 GMT
+      Etag:
+      - W/"e150500feaa08bae889d2816b126dcc2477774b2"
+      Last-Modified:
+      - Wed, 07 Mar 2018 16:26:18 GMT
+      Link:
+      - <http://www.w3.org/ns/ldp#BasicContainer>;rel="type"
+      - <http://www.w3.org/ns/ldp#Container>;rel="type"
+      - <http://www.w3.org/ns/ldp#Resource>;rel="type"
+      Accept-Patch:
+      - application/sparql-update
+      Accept-Post:
+      - text/turtle,text/rdf+n3,text/n3,application/rdf+xml,application/n-triples,application/ld+json,multipart/form-data,application/sparql-update
+      Allow:
+      - MOVE,COPY,DELETE,POST,HEAD,GET,PUT,PATCH,OPTIONS
+      Preference-Applied:
+      - return=representation
+      Vary:
+      - Accept, Range, Accept-Encoding, Accept-Language
+      - Prefer
+      Content-Type:
+      - text/turtle;charset=utf-8
+      Content-Length:
+      - '4456'
+      Server:
+      - Jetty(9.2.3.v20140905)
+    body:
+      encoding: UTF-8
+      string: |
+        @prefix premis:  <http://www.loc.gov/premis/rdf/v1#> .
+        @prefix ns022:  <http://projecthydra.org/ns/mix/> .
+        @prefix ns021:  <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+        @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+        @prefix ns020:  <http://www.w3.org/2003/12/exif/ns#> .
+        @prefix ns026:  <http://dublincore.org/documents/dcmi-terms/#> .
+        @prefix ns004:  <http://projecthydra.org/ns/auth/acl#> .
+        @prefix ns003:  <http://www.w3.org/ns/auth/acl#> .
+        @prefix ns025:  <http://open.vocab.org/terms/> .
+        @prefix ns002:  <http://purl.org/dc/terms/> .
+        @prefix ns024:  <http://projecthydra.org/ns/fits/> .
+        @prefix ns023:  <http://pcdm.org/> .
+        @prefix ns001:  <info:fedora/fedora-system:def/model#> .
+        @prefix xsi:  <http://www.w3.org/2001/XMLSchema-instance> .
+        @prefix ns008:  <https://schema.org/> .
+        @prefix ns007:  <http://www.w3.org/2004/02/skos/core#> .
+        @prefix ns006:  <http://id.loc.gov/vocabulary/relators/> .
+        @prefix xmlns:  <http://www.w3.org/2000/xmlns/> .
+        @prefix ns028:  <http://projecthydra.org/ns/odf/> .
+        @prefix ns027:  <http://mappings.dbpedia.org/server/ontology/classes/> .
+        @prefix ns005:  <http://vivoweb.org/ontology/core#> .
+        @prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+        @prefix ns009:  <http://purl.org/spar/fabio/> .
+        @prefix fedoraconfig:  <http://fedora.info/definitions/v4/config#> .
+        @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+        @prefix test:  <info:fedora/test/> .
+        @prefix ns011:  <http://www.europeana.eu/schemas/edm/> .
+        @prefix ns010:  <http://example.com/> .
+        @prefix ns015:  <http://pcdm.org/models#> .
+        @prefix ns014:  <http://projecthydra.org/works/models#> .
+        @prefix ns013:  <http://purl.org/spar/pso/embargoed#> .
+        @prefix ns012:  <http://schema.org/> .
+        @prefix ns019:  <http://www.iana.org/assignments/relation/> .
+        @prefix ns018:  <http://pcdm.org/use#> .
+        @prefix ns017:  <http://www.openarchives.org/ore/terms/> .
+        @prefix ns016:  <http://fedora.info/definitions/1/0/access/ObjState#> .
+        @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+        @prefix fedora:  <http://fedora.info/definitions/v4/repository#> .
+        @prefix ebucore:  <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+        @prefix ldp:  <http://www.w3.org/ns/ldp#> .
+        @prefix xs:  <http://www.w3.org/2001/XMLSchema> .
+        @prefix dc:  <http://purl.org/dc/elements/1.1/> .
+
+        <http://127.0.0.1:8984/rest/dev/9g/54/xh/65/9g54xh65x>
+                rdf:type                fedora:Container ;
+                rdf:type                ns014:FileSet ;
+                rdf:type                fedora:Resource ;
+                rdf:type                ns015:Object ;
+                fedora:lastModifiedBy   "bypassAdmin"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                ns001:downloadFilename  "full_jpg.jpg"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                dc:format               "Image"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                ns001:hasModel          "FileSet"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                ns023:use               "supplementary"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                ns002:dateSubmitted     "2018-03-07T16:25:53.713354+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                fedora:createdBy        "bypassAdmin"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                ns006:dpt               "bess"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                fedora:lastModified     "2018-03-07T16:26:18.95Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                fedora:created          "2018-03-07T16:25:54.302Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                ns002:modified          "2018-03-07T16:25:53.713354+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                dc:creator              "bess"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                ns003:accessControl     <http://127.0.0.1:8984/rest/dev/23/5a/3d/84/235a3d84-6d9a-4ac7-9479-513dfa27306c> ;
+                ns002:title             "NASA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                dc:description          "stars forming"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                rdf:type                ldp:RDFSource ;
+                rdf:type                ldp:Container ;
+                fedora:writable         "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+                fedora:hasParent        <http://127.0.0.1:8984/rest/dev> ;
+                ldp:contains            <http://127.0.0.1:8984/rest/dev/9g/54/xh/65/9g54xh65x/files> ;
+                ns015:hasFile           <http://127.0.0.1:8984/rest/dev/9g/54/xh/65/9g54xh65x/files/83ef8308-289e-4108-b30d-8640ce9e2e5f> .
+    http_version: 
+  recorded_at: Thu, 08 Mar 2018 13:13:26 GMT
+recorded_with: VCR 4.0.0
