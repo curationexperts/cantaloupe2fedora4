@@ -10,3 +10,15 @@ image fetching.
 ## Dependencies
 1. JRuby ~> 9.1
 2. Cantaloupe ~> 3.4
+
+## Environment Variables
+This project uses `dotenv` to set environment variables during local development. 
+Copy the sample dotenv file to `.env.development` and configure it for your local
+environment while you're doing local development.
+```
+cp dotenv.sample .env.development
+```
+
+For production use, set the environment variables as expected in your production 
+environment. See the `dotenv.sample` file for the list of environment variables
+expected.

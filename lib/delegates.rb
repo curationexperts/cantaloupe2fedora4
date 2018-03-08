@@ -1,3 +1,6 @@
+require 'dotenv'
+Dotenv.load
+require 'ldp'
 ##
 # Cantaloupe delegate script configured for Fedora 4 and UCSB
 #
@@ -46,9 +49,20 @@ module Cantaloupe
     #         corresponding to the given identifier; or a hash with `uri`,
     #         `username`, and `secret` keys; or nil if not found.
     #
-    def self.get_url(identifier, context)
-      fedora_uri = ENV['FEDORA_URI']
-      true
+    def self.get_url(identifier, _context)
+      ldp_client = ::Ldp::Client.new(ENV['FEDORA_URL'])
+      fileset_uri = RDF::URI(Cantaloupe::HttpResolver.fileset_url(identifier))
+      ldp_container = ::Ldp::Container::Basic.new(ldp_client, fileset_uri)
+      has_file = ldp_container.graph.query([nil, RDF::URI('http://pcdm.org/models#hasFile'), nil])
+      has_file.map(&:object).first.to_s
+    end
+
+    def self.fileset_url(identifier)
+      "#{ENV['FEDORA_URL']}#{identifier[0, 2]}/#{identifier[2, 2]}/#{identifier[4, 2]}/#{identifier[6, 2]}/#{identifier}"
+    end
+
+    def self.fedora_url
+      ENV['FEDORA_URL']
     end
   end
 end
